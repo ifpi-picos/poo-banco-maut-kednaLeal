@@ -1,0 +1,18 @@
+Class?
+
+Objeto?
+
+Atributos?
+
+Paradigma Comportamental ?
+
+Pilares(Herança, Encapsulamento, Polimorfismo, ...)
+
+visibilidade(público, privado e protegido)
+
+passagem de parâmentros?
+
+método get?
+método set?
+
+Compossição e agregação

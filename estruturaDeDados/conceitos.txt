@@ -1,0 +1,4 @@
+Pilhas é uma coleção ordenada de elementos que podem armazenar items na memória, 
+que é baseada no princípio LIFO que é o último a entra é o primeiro a sair.
+
+Fila é uma coleção ordenada que é baseada no FIFO que é o primeiro que entra é o primeiro a ser servido.
