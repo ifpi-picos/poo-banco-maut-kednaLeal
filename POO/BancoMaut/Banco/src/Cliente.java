@@ -69,7 +69,7 @@ public class Cliente {
         String estado = scanner.nextLine();
 
         Endereco endereco = new Endereco(rua, bairro, cidade, estado, cep);
-        return new Cliente(nome, dataNascimento, CPF, enderco);
+        return new Cliente(nome, dataNascimento, CPF, endereco);
         
     }
 
