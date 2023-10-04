@@ -2,12 +2,18 @@ public class Conta {
     private String agencia;
     private String numeroConta;
     private Cliente cliente;
+    private double saldo;
 
 
-    public Conta(String agencia, String numeroConta, Cliente cliente) {
+    public Conta(String agencia, String numeroConta, double saldo) {
         this.agencia = agencia;
         this.numeroConta = numeroConta;
-        cliente = cliente;
+       // cliente = cliente;
+        this.saldo = saldo;
+    }
+
+
+    public Conta() {
     }
 
 
@@ -26,6 +32,15 @@ public class Conta {
 
     public void setcliente(String cliente) {
         cliente = cliente;
+    }
+
+    public double getSaldo() {
+        return saldo;
+    }
+
+
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
     }
 
     
