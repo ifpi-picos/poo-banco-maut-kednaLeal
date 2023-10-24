@@ -1,3 +1,4 @@
+package Classes;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -10,7 +11,7 @@ public class Conta {
     List <Transacoes> historicoTransacoes;
 
     // Construtor
-    public Conta(String agencia, String numeroConta, double saldo) {
+    public Conta(String agencia, String numeroConta, Cliente cliente2, double saldo) {
         this.agencia = agencia;
         this.numeroConta = numeroConta;
         this.cliente = cliente;

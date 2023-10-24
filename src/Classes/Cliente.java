@@ -1,4 +1,4 @@
-
+package Classes;
 public class Cliente {
 
     private String nome;

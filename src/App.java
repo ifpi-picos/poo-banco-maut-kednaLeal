@@ -1,9 +1,12 @@
 import java.util.Scanner;
 
+import Classes.Cliente;
+import Classes.Conta;
+
 public class App {
 
     public static void main(String[] args) throws Exception {
-        Conta conta = new Conta("0000-0", "444-3", 0.0);
+        Conta conta = new Conta("0000-0", "444-3", null, 0.0);
         Cliente cliente = new Cliente("Ana", "0022", "2023-03-02", "Centro", "123");
         Scanner scanner = new Scanner(System.in);
         System.out.println("Seja bem-vindo ao Banco Maut");
