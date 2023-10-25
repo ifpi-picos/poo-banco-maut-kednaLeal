@@ -1,6 +1,7 @@
-package Classes;
 import java.util.ArrayList;
 import java.util.List;
+
+import notificacao.Notificacao;
 
 public class Conta {
 
@@ -9,14 +10,16 @@ public class Conta {
     private Cliente cliente;
     private double saldo;
     List <Transacoes> historicoTransacoes;
+    protected Notificacao notificacao;
 
     // Construtor
-    public Conta(String agencia, String numeroConta, Cliente cliente2, double saldo) {
+    public Conta(String agencia, String numeroConta, Cliente cliente, double saldo, Notificacao notificao ) {
         this.agencia = agencia;
         this.numeroConta = numeroConta;
         this.cliente = cliente;
         this.saldo = saldo;
         this.historicoTransacoes = new ArrayList<>();
+        this.notificacao = notificacao;
     }
 
     // métodos get e set
@@ -40,14 +43,11 @@ public class Conta {
         this.saldo = saldo;
     }
 
-    public boolean sacar(double valor) {
+    public void sacar(double valor) {
         if (valor <= this.saldo) {
             this.saldo -= valor;
             this.addExtrato(valor*-1, "saque");
-            return true;
-        } else {
-            return false;
-        }
+        } 
 
     }
 
@@ -59,9 +59,10 @@ public class Conta {
     public void transferir(double valor, Conta destino) {
         this.saldo = this.saldo - valor;
         destino.saldo = destino.saldo + valor;
+        addExtrato(valor, "transferência");
     }
 
-    private void addExtrato(double valor, String tipo) {
+    protected void addExtrato(double valor, String tipo) {
         Transacoes t = new Transacoes(valor,tipo);
         this.historicoTransacoes.add(t);
     }

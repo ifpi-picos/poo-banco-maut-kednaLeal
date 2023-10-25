@@ -1,8 +1,7 @@
-package Classes;
 public class Endereco {
-    private String rua;
-    private String bairro;
-    private String cep;
+    private String rua ;
+    private String bairro ;
+    private String cep ;
     private String cidade;
     private String estado;
     
@@ -12,6 +11,8 @@ public class Endereco {
         this.cep = cep;
         this.cidade = cidade;
         this.estado = estado;
+
+        
     }
 
     public String getRua() {

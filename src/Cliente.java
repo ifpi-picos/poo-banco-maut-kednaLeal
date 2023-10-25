@@ -1,4 +1,3 @@
-package Classes;
 public class Cliente {
 
     private String nome;
@@ -7,7 +6,7 @@ public class Cliente {
     private Endereco endereco;
     private Conta conta;
     
-    public Cliente(String nome, String CPF, String dataNascimento, Endereco endereco, Conta conta) {
+    public Cliente(String nome, String CPF, String dataNascimento, Endereco endereco,Conta conta) {
         this.nome = nome;
         this.CPF = CPF;
         this.dataNascimento = dataNascimento;
@@ -16,8 +15,8 @@ public class Cliente {
     }
 
 
-    public Cliente(String nome2, String cPF2, String dataNascimento2, String string, String string2) {
-    }
+    //public Cliente(String nome2, String cPF2, String dataNascimento2, String string, String string2) {
+    //}
 
 
     public String getNome() {
